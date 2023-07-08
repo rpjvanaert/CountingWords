@@ -1,10 +1,11 @@
 package com.example.countingwords.Service;
 
-import jdk.jshell.spi.ExecutionControl;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public class WordFrequencyAnalyzerImpl implements WordFrequencyAnalyzer {
+@Service
+public class WordFrequencyAnalyzerService implements IWordFrequencyAnalyzerService {
 
     public int calculateHighestFrequency(String text) {
         // TODO
@@ -16,7 +17,7 @@ public class WordFrequencyAnalyzerImpl implements WordFrequencyAnalyzer {
         return 0;
     }
 
-    public List<WordFrequency> calculateMostFrequentNWords(String text, int n) {
+    public List<IWordFrequency> calculateMostFrequentNWords(String text, int n) {
         // TODO
         return null;
     }
