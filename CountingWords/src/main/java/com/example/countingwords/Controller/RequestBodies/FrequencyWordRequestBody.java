@@ -1,4 +1,4 @@
-package com.example.countingwords.REST.RequestBodies;
+package com.example.countingwords.Controller.RequestBodies;
 
 public class FrequencyWordRequestBody {
     public final String text;

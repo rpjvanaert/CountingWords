@@ -1,4 +1,4 @@
-package com.example.countingwords.REST.RequestBodies;
+package com.example.countingwords.Controller.RequestBodies;
 
 public class HighestFrequencyRequestBody {
     public final String text;

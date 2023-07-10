@@ -1,7 +1,7 @@
-package com.example.countingwords.REST;
+package com.example.countingwords.Controller;
 
-import com.example.countingwords.REST.RequestBodies.FrequencyWordRequestBody;
-import com.example.countingwords.REST.RequestBodies.MostFrequentNWordsRequestBody;
+import com.example.countingwords.Controller.RequestBodies.FrequencyWordRequestBody;
+import com.example.countingwords.Controller.RequestBodies.MostFrequentNWordsRequestBody;
 import com.example.countingwords.Service.IWordFrequency;
 import com.example.countingwords.Service.IWordFrequencyAnalyzerService;
 import org.springframework.beans.factory.annotation.Autowired;
