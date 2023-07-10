@@ -54,7 +54,7 @@ public class WordFrequencyAnalyzerService implements IWordFrequencyAnalyzerServi
 
             int frequency = frequencyMap.getOrDefault(word, 0);
 
-            frequencyMap.put(word, frequency + 1);
+            frequencyMap.put(word, frequency + 1); //@TODO redo with addFrequency function
         }
 
         List<IWordFrequency> frequencyList = new ArrayList<>();

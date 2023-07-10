@@ -6,6 +6,14 @@ public class WordFrequency implements IWordFrequency, Comparable<IWordFrequency>
     public int frequency;
 
     public WordFrequency(String word, int frequency) {
+        if (word == null || word.isEmpty() || word.isBlank()) {
+            throw new IllegalArgumentException("String cannot be empty");
+        }
+
+        if (frequency < 1) {
+            throw new IllegalArgumentException("Frequency cannot be less than 1");
+        }
+
         this.word = word;
         this.frequency = frequency;
     }
@@ -24,9 +32,9 @@ public class WordFrequency implements IWordFrequency, Comparable<IWordFrequency>
 
     @Override
     public int compareTo(IWordFrequency o) {
-        int compareFrequency = Integer.compare(this.frequency, o.getFrequency()) * -1;
-
-        if (compareFrequency != 0) return compareFrequency;
+        if (this.frequency != o.getFrequency()) {
+            return Integer.compare(this.frequency, o.getFrequency()) * -1;
+        }
 
         return this.word.compareTo(o.getWord());
     }
