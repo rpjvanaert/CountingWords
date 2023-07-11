@@ -5,4 +5,4 @@ COPY . /dockerapp
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "build/libs/CountingWords-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "CountingWords-0.0.1-SNAPSHOT.jar"]
