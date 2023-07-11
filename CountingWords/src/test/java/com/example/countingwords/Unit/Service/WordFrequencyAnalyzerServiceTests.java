@@ -48,7 +48,7 @@ public class WordFrequencyAnalyzerServiceTests {
     }
 
     @Test
-    void testCalculateFrequencyForWord_case1() {
+    void testCalculateFrequencyForWord_Case1() {
         String text = "The sun shines over the lake";
         String word = "The";
 
@@ -58,7 +58,7 @@ public class WordFrequencyAnalyzerServiceTests {
     }
 
     @Test
-    void testCalculateFrequencyForWord_case2() {
+    void testCalculateFrequencyForWord_Case2() {
         String text = "The sun shines over the lake";
         String word = "sun";
 
@@ -68,7 +68,7 @@ public class WordFrequencyAnalyzerServiceTests {
     }
 
     @Test
-    void testCalculateFrequencyForWord_case3() {
+    void testCalculateFrequencyForWord_Case3() {
         String text = "The sun shines over the lake";
         String word = "moon";
 
@@ -78,7 +78,7 @@ public class WordFrequencyAnalyzerServiceTests {
     }
 
     @Test
-    void testGetFrequencyNWords_amount3() {
+    void testGetFrequencyNWords_Amount3() {
         String text = "The sun shines over the lake";
         int amount = 3;
 
@@ -98,7 +98,7 @@ public class WordFrequencyAnalyzerServiceTests {
     }
 
     @Test
-    void testGetFrequencyNWords_amount2() {
+    void testGetFrequencyNWords_Amount2() {
         String text = "The sun shines over the lake";
         int amount = 2;
 

@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class WordFrequencyTests {
 
     @Test
-    public void testValidWordFrequencyInit() {
+    public void testValidWordFrequency_Init() {
         String word = "the";
         int frequency = 3;
 
@@ -19,7 +19,7 @@ public class WordFrequencyTests {
     }
 
     @Test
-    public void testInvalidWordFrequencyInitEmptyWord() {
+    public void testInvalidWordFrequency_InitEmptyWord() {
         String word = "";
         int frequency = 3;
 
@@ -27,7 +27,7 @@ public class WordFrequencyTests {
     }
 
     @Test
-    public void testInvalidWordFrequencyInitializationWithBlankWord() {
+    public void testInvalidWordFrequency_InitWithBlankWord() {
         String word = "   ";
         int frequency = 3;
 
@@ -35,7 +35,7 @@ public class WordFrequencyTests {
     }
 
     @Test
-    public void testInvalidWordFrequencyInitializationWithNegativeFrequency() {
+    public void testInvalidWordFrequency_InitWithNegativeFrequency() {
         String word = "the";
         int frequency = -13;
 
@@ -55,7 +55,7 @@ public class WordFrequencyTests {
     }
 
     @Test
-    public void testCompareToWithDifferentFrequencies() {
+    public void testCompareTo_DifferentFrequencies() {
         WordFrequency wordFrequency1 = new WordFrequency("the", 5);
         WordFrequency wordFrequency2 = new WordFrequency("apple", 3);
 
@@ -65,7 +65,7 @@ public class WordFrequencyTests {
     }
 
     @Test
-    public void testCompareToWithEqualFrequenciesAndDifferentWords() {
+    public void testCompareTo_EqualFrequenciesAndDifferentWords() {
         WordFrequency wordFrequency1 = new WordFrequency("and", 5);
         WordFrequency wordFrequency2 = new WordFrequency("the", 5);
 
@@ -75,7 +75,7 @@ public class WordFrequencyTests {
     }
 
     @Test
-    public void testCompareToWithEqualFrequenciesAndSameWords() {
+    public void testCompareTo_EqualFrequenciesAndSameWords() {
         WordFrequency wordFrequency1 = new WordFrequency("the", 5);
         WordFrequency wordFrequency2 = new WordFrequency("the", 5);
 
