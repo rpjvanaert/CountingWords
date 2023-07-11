@@ -59,7 +59,12 @@ public class WordFrequencyAnalyzerService implements IWordFrequencyAnalyzerServi
 
         List<IWordFrequency> frequencyList = new ArrayList<>();
         for (String word : frequencyMap.keySet()) {
-            frequencyList.add(new WordFrequency(word, frequencyMap.get(word)));
+            try {
+                frequencyList.add(new WordFrequency(word, frequencyMap.get(word)));
+            } catch (IllegalArgumentException e) {
+                // In case of illegal argument, word wasn't correct and shouldn't be added either way.
+                // This happens due to unknown reason in the beginning of this function
+            }
         }
 
         return frequencyList;
