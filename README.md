@@ -28,4 +28,4 @@ This REST API can be run using Docker or IntelliJ. The application uses port 808
 To run application using IntelliJ, the class 'CountingWordsApplication' should be run.
 
 ### Docker
-To run this application using Docker, Docker Desktop and a software which can execute a bash script should be installed. For the bash script git bash can be used. After the setup, the bash script named "[dockerrun.sh](dockerrun.sh)" should be executed.
+To run this application using Docker, Docker Desktop and a software which can execute a bash script should be installed. For the bash script git bash can be used. After the setup, the bash script named "[dockerrun.sh](CountingWords/dockerrun.sh)" should be executed.
