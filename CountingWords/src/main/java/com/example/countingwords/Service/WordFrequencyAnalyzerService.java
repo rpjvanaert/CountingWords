@@ -44,7 +44,7 @@ public class WordFrequencyAnalyzerService implements IWordFrequencyAnalyzerServi
         return frequencyWords.subList(0, n);
     }
 
-    public List<IWordFrequency> getFrequencyWords(String text) { // @TODO bug here, somehow, sometimes a empty char is detected as word
+    public List<IWordFrequency> getFrequencyWords(String text) {
 
         String[] words = text.replaceAll("[^a-zA-Z]", " ").split("\\s+");
 
@@ -54,7 +54,7 @@ public class WordFrequencyAnalyzerService implements IWordFrequencyAnalyzerServi
 
             int frequency = frequencyMap.getOrDefault(word, 0);
 
-            frequencyMap.put(word, frequency + 1); //@TODO redo with addFrequency function
+            if (!word.isBlank() && !word.isEmpty()) frequencyMap.put(word, frequency + 1);
         }
 
         List<IWordFrequency> frequencyList = new ArrayList<>();
